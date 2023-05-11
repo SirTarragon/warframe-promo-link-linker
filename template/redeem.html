@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Promotion Code Redemption</title>
+  </head>
+  <body>
+    <h1>Promotion Code Redemption</h1>
+    <ul>
+      {% for code in codes %}
+        <li><a href="https://www.warframe.com/promocode?code={{ code }}">{{ code }}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
